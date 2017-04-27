@@ -1,0 +1,295 @@
+
+
+#topBar{
+    padding: 20px;
+    background-color: #21031c;
+    height: 125px;
+}
+#logo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+
+
+    vertical-align: middle;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.img-circle {
+    border-radius: 50%;
+    alt: logo;
+    float: left;
+    width:100px;
+    height:100px;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+#navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navItem{
+    float: left;
+}
+.navItem-center{
+    margin: auto;
+}
+.navItem-center h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 25px;
+    line-height: 15.4px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #77286f;
+}
+
+.backGround-1{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+    background-image: url("../backgrounds/signUpBackground/blurBackground3.png"), -webkit-linear-gradient(left, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* Chrome10-25,Safari5.1-6 */
+    background-image: url("../backgrounds/signUpBackground/blurBackground3.png"), linear-gradient(to right, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #e27ace;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+
+
+    position:fixed;
+    top:8px;
+    bottom:0px;
+    left:8px;
+    right: 8px;
+    z-index: -1;
+
+}
+.backGround-2{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+    background-image: url("../backgrounds/accountSelectorBackGround/ASbackGroundBlurSat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+
+
+    position:fixed;
+    top:8px;
+    bottom: 0px;
+    left:8px;
+    right: 8px;
+    z-index: -1;
+
+}
+
+.backGround-3{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+    background-image: url("../backgrounds/discoBackground/discoBlurSat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+
+
+    position:fixed;
+    top:8px;
+    bottom: 0px;
+    left:8px;
+    right: 8px;
+    z-index: -1;
+
+}
+
+.backGround-4{
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+     background-image: url("../backgrounds/loungeBackground/loungeBlurSat.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     color: white;
+     text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+
+
+     position:fixed;
+     top:8px;
+     bottom: 0px;
+     left:8px;
+     right: 8px;
+     z-index: -1;
+
+}
+.backGround-5{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+    background-image: url("../backgrounds/foodBackground/foodBlurSat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+
+
+    position:fixed;
+    top:8px;
+    bottom: 0px;
+    left:8px;
+    right: 8px;
+    z-index: -1;
+
+}
+
+.splashBox{
+    background-size: contain;
+    background-color: rgba(71, 76, 76, 0.7);
+}
+.splashBox-light{
+    background-size: contain;
+    background-color: rgba(206, 206, 206, 0.7);
+}
+.splashBox-dark{
+    background-size: contain;
+    background-color: rgba(46, 46, 48, 0.7);
+}
+.splashBox-white{
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.splashBox-black{
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.splashBox-opaque{
+    background-size: contain;
+    background-color: rgba(71, 76, 76, 1);
+}
+.splashBox-light-opaque{
+    background-size: contain;
+    background-color: rgba(206, 206, 206, 1);
+}
+.splashBox-dark-opaque{
+    background-size: contain;
+    background-color: rgba(46, 46, 48, 1);
+}
+.splashBox-white-opaque{
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.splashBox-black-opaque{
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.newButton{
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: rgba(15, 126, 164, 0.45);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newButton:hover{
+    border-width: 4px;
+    background-color: rgba(15, 126, 164, 0.8);
+}
+.newButton-black{
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newButton-black:hover{
+    border-width: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.newButton-yellow{
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 3px;
+    background-color: rgba(255, 255, 0, 0.45);
+
+    color: darkgray;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newButton-yellow:hover{
+    border-width: 4px;
+    background-color: rgba(255, 255, 0, 0.8);
+}
+.newButton-purple{
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: rgba(153, 0, 255, 0.38);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newButton-purple:hover{
+    border-width: 4px;
+    background-color: rgba(153, 0, 255, 0.8);
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Owl Homepage</title>
+    <style type="text/css">
+
+        #topBar{
+            padding: 20px;
+            background-color: #21031c;
+            height: 125px;
+        }
+        #logo {
+            position: relative;
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+
+
+            vertical-align: middle;
+            color: white;
+            border-style: solid;
+            border-color: white;
+            border-width: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        .img-circle {
+            border-radius: 50%;
+            alt: logo;
+            float: left;
+            width:100px;
+            height:100px;
+
+            border-style: solid;
+            border-color: white;
+            border-width: 5px;
+        }
+        #navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navItem{
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        .active {
+            background-color: #77286f;
+        }
+
+        #backGround{
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+            background-image: url("backgrounds/signUpBackground/background.png"), -webkit-linear-gradient(left, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* Chrome10-25,Safari5.1-6 */
+            background-image: url("backgrounds/signUpBackground/background.png"), linear-gradient(to right, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            background-color: #e27ace;
+            color: white;
+            text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+
+
+            position:absolute;
+            top:8px;
+            bottom:0px;
+            left:8px;
+            right: 8px;
+            background-color:#9ACD32;
+            z-index: -1;
+
+        }
+        #mainBox{
+            background-image: url("backgrounds/signUpBackground/blurBackground2.png"), -webkit-linear-gradient(left, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* Chrome10-25,Safari5.1-6 */
+            background-image: url("backgrounds/signUpBackground/blurBackground2.png"), linear-gradient(to right, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            background-color: #e27ace;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="backGround"></div>
+
+    <div id="topBar">
+        <h1>
+            <img src="https://tinyurl.com/kge9mqk" class="img-circle">
+            <div id="logo">OWLZ</div>
+        </h1>
+    </div>
+    <ul id="navBar">
+        <li class="navItem"><a href="venues.html" class="active">Venues</a></li>
+        <li class="navItem"><a href="events.html">Events</a></li>
+        <li class="navItem"><a href="myAccount.html">My Account</a></li>
+    </ul>
+
+    <!-- Start writing inside mainbox -->
+
+    <div id="mainBox">
+        <p style="text-align:center; font-size:30px; color: #FFFFFF;">Test</p>
+    </div>
+
+</body>
+</html>

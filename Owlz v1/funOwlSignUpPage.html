@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Fun Owl Sign Up Page</title>
+
+    <link href="css/templateStyles.css" type="text/css" rel="stylesheet"/>
+
+    <!--
+
+    <style type="text/css">
+
+        body {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#475484+0,00b1f7+30,0a0044+77,000000+98 */
+            background-image: url("backgrounds/signUpBackground/blurBackground2.png"), -webkit-linear-gradient(left, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* Chrome10-25,Safari5.1-6 */
+            background-image: url("backgrounds/signUpBackground/blurBackground2.png"), linear-gradient(to right, rgba(71,84,132,1) 0%,rgba(0,177,247,1) 30%,rgba(10,0,68,1) 77%,rgba(0,0,0,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            background-color: #e27ace;
+            color: white;
+            text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+        }
+
+        .header{
+            width: 100%;
+            height: 100%;
+            align-self: stretch;
+            padding-bottom: 40px;
+            padding-top: 10px;
+            background-image: url("backgrounds/signUpBackground/blurBackground2.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+        }
+
+        .header img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+            background: #555;
+        }
+        #topHR{
+            margin-top: -20px;
+        }
+
+        .header h1 {
+            position: relative;
+            top: 35px;
+            left: 10px;
+        }
+        .mainForm{
+            font-size: 20px;
+            display: flex;
+            border-width: 50px;
+            border-color: transparent;
+            margin: 20px;
+        }
+        .inputBox {
+            margin-left: 10px;
+            color: black;
+        }
+        table{
+            background-image: url("backgrounds/signUpBackground/blurBackground2.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+        }
+        table, th, td{
+            padding: 5px;
+            z-index: 1;
+        }
+        .title{
+            padding-left: 50px;
+        }
+        .rightPad{
+            padding-right: 50px;
+        }
+        .bottomPad{
+            padding-bottom: 30px;
+        }
+        .topPad{
+            padding-bottom: 30px;
+        }
+
+    </style>
+
+    -->
+
+</head>
+<div id="gradient">
+<body>
+    <div class="header">
+
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/f4/93/92/f49392d3ad1a6431ed8076690b72bb1c.jpg"
+             alt="logo"
+             float="left"
+             style="width:100px;height:100px;">
+
+        <h1 align="center">Fun Owl Sign Up</h1>
+    </div>
+
+    <div id="topHR"><hr></div>
+
+    <div class="mainForm">
+
+        <table cellspacing=12px align="center">
+            <tr>
+                <td class="topPad"></td>
+            </tr>
+            <tr>
+                <td class="title">User Name:</td>
+                <td><input type="text" name="username" class="inputBox" placeholder="Pick a cool one!"></td>
+                <td class="rightPad"></td>
+            </tr>
+            <tr>
+                <td class="title">Password:</td>
+                <td><input type="password" name="pw1" class="inputBox"></td>
+            </tr>
+            <tr>
+                <td class="title">Confirm Password:</td>
+                <td><input type="password" name="pw2" class="inputBox"></td>
+            </tr>
+            <tr>
+                <td class="title">Email:</td>
+                <td><input type="email" name="email" class="inputBox" placeholder="example@website.ex"></td>
+            </tr>
+            <tr>
+                <td class="title">Name:</td>
+                <td><input type="text" name="name" class="inputBox" placeholder="First Last"></td>
+                <td class="rightPad"></td>
+            </tr>
+            <tr>
+                <td class="title">Phone Number:</td>
+                <td><input type="tel" name="phoneNum" class="inputBox" placeholder="xxx-xxx-xxxx"></td>
+            </tr>
+            <tr>
+                <td class="title">Date of Birth:</td>
+                <td><input type="date" name="birthday" class="inputBox" placeholder="mm/dd/yy"></td>
+            </tr>
+            <tr>
+                <td class="title">Address:</td>
+                <td><input type="text" name="address" class="inputBox"></td>
+            </tr>
+            <tr>
+                <td class="title">Zip Code:</td>
+                <td><input type="text" name="zipCode" class="inputBox"></td>
+            </tr>
+            <tr>
+                <td class="title">Gender:</td>
+                <td>
+                    <select class="inputBox">
+                        <option value = "1">Male</option>
+                        <option value = "2">Female</option>
+                        <option value = "3">Trans-Male</option>
+                        <option value = "4">Trans-Female</option>
+                        <option value = "5">Other / Prefer Not To Say</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">
+                        <a href="https://www.google.com/">
+                            <button>Continue</button>
+                        </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="bottomPad"></td>
+            </tr>
+        </table>
+    <div>
+
+</body>
+</div>
+
+</html>

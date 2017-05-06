@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Owl Homepage</title>
+
+    <link href="css/templateStyles.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+
+        #mainBox{
+            background-image: none;
+        }
+        .header h1 {
+            position: relative;
+            top: 35px;
+            left: 10px;
+        }
+        .mainForm{
+            font-size: 20px;
+            border-width: 50px;
+            border-color: transparent;
+            margin: 20px;
+        }
+        .inputBox {
+            margin-left: 10px;
+            color: black;
+        }
+        table{
+            background-color: rgba(71, 76, 76, 0.7);
+        }
+        table, th, td{
+            padding: 5px;
+            z-index: 1;
+        }
+        .title{
+            padding-left: 50px;
+            color: white;
+            text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+        }
+        .rightPad{
+            padding-right: 50px;
+        }
+        .bottomPad{
+            padding-bottom: 30px;
+        }
+        .topPad{
+            padding-bottom: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="backGround-1"></div>
+
+    <div id="topBar">
+        <h1>
+            <img src="https://tinyurl.com/kge9mqk" class="img-circle">
+            <div id="logo">OWLZ</div>
+        </h1>
+    </div>
+    <ul id="navBar">
+        <li class="navItem-center"><h2>Fun Owl Sign Up</h2></li>
+    </ul>
+
+    <!-- Start writing inside mainbox -->
+
+    <div id="mainBox">
+        <div class="mainForm">
+
+            <table cellspacing=12px align="center">
+                <tr>
+                    <td class="topPad"></td>
+                </tr>
+                <tr>
+                    <td class="title">User Name:</td>
+                    <td><input type="text" name="username" class="inputBox" placeholder="Pick a cool one!"></td>
+                    <td class="rightPad"></td>
+                </tr>
+                <tr>
+                    <td class="title">Password:</td>
+                    <td><input type="password" name="pw1" class="inputBox"></td>
+                </tr>
+                <tr>
+                    <td class="title">Confirm Password:</td>
+                    <td><input type="password" name="pw2" class="inputBox"></td>
+                </tr>
+                <tr>
+                    <td class="title">Email:</td>
+                    <td><input type="email" name="email" class="inputBox" placeholder="example@website.ex"></td>
+                </tr>
+                <tr>
+                    <td class="title">Name:</td>
+                    <td><input type="text" name="name" class="inputBox" placeholder="First Last"></td>
+                    <td class="rightPad"></td>
+                </tr>
+                <tr>
+                    <td class="title">Phone Number:</td>
+                    <td><input type="tel" name="phoneNum" class="inputBox" placeholder="xxx-xxx-xxxx"></td>
+                </tr>
+                <tr>
+                    <td class="title">Date of Birth:</td>
+                    <td><input type="date" name="birthday" class="inputBox" placeholder="mm/dd/yy"></td>
+                </tr>
+                <tr>
+                    <td class="title">Address:</td>
+                    <td><input type="text" name="address" class="inputBox"></td>
+                </tr>
+                <tr>
+                    <td class="title">Zip Code:</td>
+                    <td><input type="text" name="zipCode" class="inputBox"></td>
+                </tr>
+                <tr>
+                    <td class="title">Gender:</td>
+                    <td>
+                        <select class="inputBox">
+                            <option value = "1">Male</option>
+                            <option value = "2">Female</option>
+                            <option value = "3">Trans-Male</option>
+                            <option value = "4">Trans-Female</option>
+                            <option value = "5">Other / Prefer Not To Say</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <div class="newButton" onclick="location.href='genericPage2.html';">
+                            Go!
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bottomPad"></td>
+                </tr>
+            </table>
+            <div>
+    </div>
+
+</body>
+</html>

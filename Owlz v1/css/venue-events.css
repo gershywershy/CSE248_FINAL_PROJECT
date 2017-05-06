@@ -1,0 +1,95 @@
+.bodyFlex{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 0px;
+    overflow-y: auto;
+}
+
+.title80{
+    display: table;
+
+    width: 80%;
+    padding: 10px;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+
+    border-radius: 8px 8px 0px 0px;
+
+    background-color: #333;
+}
+.title80Text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 30pt;
+}
+
+.verticalScrollBox{
+
+    border-radius: 0px 0px 8px 8px;
+
+    padding: 10px;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    color: white;
+
+    align-self: stretch;
+}
+.eventBox{
+    display: flex;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 10px;
+}
+.eventBox:hover{
+    border-color: #5bc0de;
+}
+.eventTitle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    height: 100px;
+    width: 100%;
+
+    text-align: center;
+}
+.eventTitle h3{
+    color: white;
+    width: 100%;
+    margin-left: -5px;
+    margin-right: -5px;
+    font-size: 25pt;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 5px;
+    margin: 0px;
+}
+.eventTitle p{
+    padding: 0px;
+    padding-top: 5px;
+    margin: 0px;
+
+}
+.eventPhoto{
+    align-self: stretch;
+
+    height: 100px;
+    width: 225px;
+
+    object-fit: cover;
+    overflow: hidden;
+}

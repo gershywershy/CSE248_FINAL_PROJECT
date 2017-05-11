@@ -426,6 +426,7 @@ a.closeX {
 .popup-photo{
     height: 25%;
     width: 90%;
+
     max-width: 400px;
     min-width: 200px;
 

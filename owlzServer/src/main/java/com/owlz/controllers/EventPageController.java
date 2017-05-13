@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.owlz.testModels.EventTest;
 
 @Controller
-@RequestMapping("/funOwlEvents.html")
+@RequestMapping("/funOwlEvents")
 public class EventPageController {
 	
 	private String gDesc = "Some really cool event description. We have a lot of cool things planned, for our club event and things.";

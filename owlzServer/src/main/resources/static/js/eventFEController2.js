@@ -2,23 +2,30 @@
  * Created by Dan on 5/12/2017.
  */
 
-var xmlHttp = new XMLHttpRequest();
+let xmlHttp = new XMLHttpRequest();
 xmlHttp.responseType = 'json';
 
-function Event () {
-    this.title;
-    this.shortDescription;
-    this.description;
-    this.photo;
-    this.eventIndex;
-}
+let events = [];
 
-var events = [];
+setZipcode("11752"); //for testing
+pageInitialization(); //runs search on page for the users zip code
+
+function pageInitialization(){
+    let eventWindow = document.getElementById('eventWindow');
+
+    if(eventWindow.innerHTML.length == 0){ //if there is nothing in the window using regular expressions
+        document.getElementsByTagName("input")[0].value = getZipCode(); //gets zipcode from model and puts that into search bar
+        search(); //runs search function for the account zipcode
+
+    }else{
+        alert("events not empty"); //used for testing
+    }
+}
 
 function search(){
     if(xmlHttp.readyState == 0 || xmlHttp.readyState == 4){
-        var searchText = encodeURIComponent(document.getElementsByTagName("input")[0].value);
-        xmlHttp.open("GET", ("http://localhost:8080/funOwlEvents.html/search/"+searchText), true);
+        let searchText = encodeURIComponent(document.getElementsByTagName("input")[0].value);
+        xmlHttp.open("GET", ("http://localhost:8080/funOwlEvents/search/"+searchText), true);
         xmlHttp.onreadystatechange = handleServerResponse;
         xmlHttp.send(null);
 
@@ -36,7 +43,7 @@ function handleServerResponse(){
             removeEvents();
             populateEvents();
         }else{
-            alert("Couldn't find events!");
+            alert("Couldn't find events!"); //triggered if the server sends back an error msg on search request
         }
     }
 
@@ -44,16 +51,14 @@ function handleServerResponse(){
 
 function populateEvents(){
 
-    var window = document.getElementById('eventWindow');
-    
-    //alert("Tried population");
+    let window = document.getElementById('eventWindow');
+
 
     for(let i=0; i<events.length; i++){
 
-        var focusEvent = events[i];
-        //alert(focusEvent.title);
+        let focusEvent = events[i];
 
-        var eventBox = document.createElement('div');
+        let eventBox = document.createElement('div');
         eventBox.className = "eventBox";
         //alert(focusEvent.eventIndex);
 
@@ -64,17 +69,17 @@ function populateEvents(){
             generatePopUp(this.x);
         };
 
-        var eventPhoto = document.createElement('img');
+        let eventPhoto = document.createElement('img');
         eventPhoto.className = "eventPhoto";
         eventPhoto.src = focusEvent.photo;
 
-        var titleBox = document.createElement('div');
+        let titleBox = document.createElement('div');
         titleBox.className = "eventTitle";
 
-        var title = document.createElement('h3');
+        let title = document.createElement('h3');
         title.innerHTML = focusEvent.title;
 
-        var description = document.createElement('p');
+        let description = document.createElement('p');
         description.innerHTML = focusEvent.shortDescription;
 
         titleBox.appendChild(title);
@@ -88,25 +93,25 @@ function populateEvents(){
 }
 
 function removeEvents(){
-    var popupBody = document.getElementById("eventWindow");
-    popupBody.innerHTML = ""; //remove everything!
+    let eventsBody = document.getElementById("eventWindow");
+    eventsBody.innerHTML = ""; //remove everything!
 }
 
 function generatePopUp(index){
-    var focusEvent = events[index];
+    let focusEvent = events[index];
 
     //alert(index);
 
-    var popupBody = document.getElementsByClassName("popup-full")[0];
+    let popupBody = document.getElementsByClassName("popup-full")[0];
 
-    var popupTitle = document.getElementsByClassName("popup-full")[0].getElementsByTagName("h1")[0];
+    let popupTitle = document.getElementsByClassName("popup-full")[0].getElementsByTagName("h1")[0];
     popupTitle.innerHTML = focusEvent.title;
 
-    var photo = popupBody.getElementsByClassName("popup-photo-column")[0].getElementsByTagName("img")[0];
+    let photo = popupBody.getElementsByClassName("popup-photo-column")[0].getElementsByTagName("img")[0];
     photo.src = focusEvent.photo;
     photo.className = "popup-photo";
 
-    var popupDesc = popupBody.getElementsByClassName("popup-body")[0].getElementsByClassName("popup-text-col")[0].getElementsByTagName("p")[0];
+    let popupDesc = popupBody.getElementsByClassName("popup-body")[0].getElementsByClassName("popup-text-col")[0].getElementsByTagName("p")[0];
     popupDesc.innerHTML = focusEvent.description;
 
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Fun Owl Homepage</title>
+    <link th:href="@{/css/templateStyles.css}" rel="stylesheet"/>
+    <link th:href="@{/css/venue-events.css}" rel="stylesheet"/>
+
+</head>
+<body class="bodyFlex">
+
+<div class="backGround-2"></div>
+
+<div id="topBar">
+    <h1>
+        <img src="https://tinyurl.com/kge9mqk" class="img-circle"></img>
+        <span id="logo" style="display:block">OWLZ</span>
+    </h1>
+</div>
+<ul id="navBar">
+    <li class="navItem"><a href="funOwlVenues.html">Venues</a></li>
+    <li class="navItem"><a href="funOwlEvents.html" class="active">Events</a></li>
+    <li class="navItem"><a href="funOwlMyAccount.html">My Account</a></li>
+    <li class="searchBar">
+        <input type="search" id="searchBar" class="flatInputBox"/>
+        <input type="submit" id="searchButton" value="Search" onclick='search()'/>
+    </li>
+</ul>
+
+<!-- Start writing inside mainbox -->
+
+<div class="popup-full" id="event-popup">
+    <div class="popup-title">
+        <a class="closeX" onclick="popUpToggle('event-popup')">&#10006;</a>
+        <h1>Event 1</h1>
+    </div>
+    <div class="popup-body">
+        <div class="popup-photo-column">
+
+            <img th:src="@{https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F30626206%2F22430626928%2F1%2Foriginal.jpg?w=800&amp;rect=0%2C483%2C800%2C400&amp;s=aa3a28adef1f530ccf637631dda24416}" class="popup-photo"></img>
+
+            <button class="popup-button" onclick="location.href='genericPage2.html';">
+                Buy Tickets
+            </button>
+
+            <button class="popup-button">
+                Go To Venue Page
+            </button>
+
+        </div>
+        <div class="popup-text-col">
+            <p id="popUpDesc">
+                Description
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="title80">
+    <div class="title80Text">Events</div>
+</div>
+
+<div class="splashBox-white verticalScrollBox" id="eventWindow">
+
+
+
+</div>
+
+</body>
+
+<script type="text/javascript" th:src="@{js/popUpWindowScript.js}"></script>
+<script type="text/javascript" th:src="@{js/eventFEController2.js}"></script>
+
+</html>

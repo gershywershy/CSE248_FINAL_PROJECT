@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OwlzServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OwlzServerApplication.class, args);
+		SpringApplication.run(OwlzServerApplication.class, args); //save
 	}
 }

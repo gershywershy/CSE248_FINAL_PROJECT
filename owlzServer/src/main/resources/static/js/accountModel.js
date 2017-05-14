@@ -5,12 +5,11 @@
 let cache = window.localStorage;
 
 function Account(){
-	  this.accountType;
+	this.accountType;
     this.username;
     this.password;
     this.zipCode;
 }
-
 
 function setAccountType(accountTypeString){ // EITHER "FO" OR "BO" Any other strings will throw an error
 	if (accountTypeString == "FO" || accountTypeString == "BO"){
@@ -22,11 +21,7 @@ function setAccountType(accountTypeString){ // EITHER "FO" OR "BO" Any other str
 }
 
 function setUsername(newUsername){ //accepts a string
-    localStorage.setItem("accountType", newUsername);
-
-function setUsername(newUsername){ //accepts a string
     localStorage.setItem("username", newUsername);
-
 }
 
 function setPassword(newPassword){ //accepts a string
@@ -37,11 +32,9 @@ function setZipcode(newZipCode){ //accepts a string
     localStorage.setItem("zipCode", newZipCode)
 }
 
-
 function getAccountType(){
 	return localStorage.getItem("accountType");
 }
-
 
 function getUsername(){
     return localStorage.getItem("username");
@@ -56,8 +49,7 @@ function getZipCode(){
 }
 
 function getAccountObj(){ //returns current account object built from local storage
-    let accountObj = new Account(); //local scope variable, might need to change to var if unexpected behavior occurs
-
+    var accountObj = new Account(); //local scope variable, might need to change to var if unexpected behavior occurs
     accountObj.accountType = getAccountType();
     accountObj.username = getUsername();
     accountObj.password = getPassword();
@@ -67,8 +59,7 @@ function getAccountObj(){ //returns current account object built from local stor
 }
 
 function setAccountObj(newAccountObj){ //accepts an account object and sets all variables
-
-	  if(newAccountObj.accountType !== null && newAccountObj.accountType !== ""){ //if username variable is defined
+	if(newAccountObj.accountType !== null && newAccountObj.accountType !== ""){ //if username variable is defined
         setAccountType(newAccountObj.accountType);
     }
     if(newAccountObj.username !== null && newAccountObj.username !== ""){ //if username variable is defined

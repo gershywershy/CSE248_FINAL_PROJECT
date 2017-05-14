@@ -18,9 +18,9 @@
     </h1>
 </div>
 <ul id="navBar">
-    <li class="navItem"><a th:href="@{funOwlVenues}">Venues</a></li>
-    <li class="navItem"><a th:href="@{funOwlEvents}" class="active">Events</a></li>
-    <li class="navItem"><a th:href="@{funOwlMyAccount}">My Account</a></li>
+    <li class="navItem"><a href="funOwlVenues.html">Venues</a></li>
+    <li class="navItem"><a href="funOwlEvents.html" class="active">Events</a></li>
+    <li class="navItem"><a href="funOwlMyAccount.html">My Account</a></li>
     <li class="searchBar">
         <input type="search" id="searchBar" class="flatInputBox"/>
         <input type="submit" id="searchButton" value="Search" onclick='search()'/>
@@ -63,11 +63,14 @@
     <div class="title80Text">Events</div>
 </div>
 
-<div class="splashBox-white verticalScrollBox" id="eventWindow"></div> <!-- NEEDS TO BE EMPTY FOR INITIALIZATION SCRIPT TO RUN -->
+<div class="splashBox-white verticalScrollBox" id="eventWindow">
+
+
+
+</div>
 
 </body>
 
-<script type="text/javascript" th:src="@{js/accountModel.js}"></script>
 <script type="text/javascript" th:src="@{js/popUpWindowScript.js}"></script>
 <script type="text/javascript" th:src="@{js/eventFEController2.js}"></script>
 

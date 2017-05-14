@@ -5,13 +5,23 @@
 let cache = window.localStorage;
 
 function Account(){
+	this.accountType;
     this.username;
     this.password;
     this.zipCode;
 }
 
+function setAccountType(accountTypeString){ // EITHER "FO" OR "BO" Any other strings will throw an error
+	if (accountTypeString == "FO" || accountTypeString == "BO"){
+		localStorage.setItem("accountType", accountTypeString);
+	}else{
+		throw "Invalid account type passed, (" + accountTypeString +").\n Needs to be FO or BO for fun owl or business owl.";
+	}
+	
+}
+
 function setUsername(newUsername){ //accepts a string
-    localStorage.setItem("username", newUsername);
+    localStorage.setItem("accountType", newUsername);
 }
 
 function setPassword(newPassword){ //accepts a string
@@ -20,6 +30,10 @@ function setPassword(newPassword){ //accepts a string
 
 function setZipcode(newZipCode){ //accepts a string
     localStorage.setItem("zipCode", newZipCode)
+}
+
+function getAccountType(){
+	return localStorage.getItem("accountType");
 }
 
 function getUsername(){
@@ -36,6 +50,7 @@ function getZipCode(){
 
 function getAccountObj(){ //returns current account object built from local storage
     let accountObj = new Account(); //local scope variable, might need to change to var if unexpected behavior occurs
+    accountObj.accountType = getAccountType();
     accountObj.username = getUsername();
     accountObj.password = getPassword();
     accountObj.zipCode  = getZipCode();
@@ -44,6 +59,9 @@ function getAccountObj(){ //returns current account object built from local stor
 }
 
 function setAccountObj(newAccountObj){ //accepts an account object and sets all variables
+	if(newAccountObj.accountType !== null && newAccountObj.accountType !== ""){ //if username variable is defined
+        setAccountType(newAccountObj.accountType);
+    }
     if(newAccountObj.username !== null && newAccountObj.username !== ""){ //if username variable is defined
         setUsername(newAccountObj.username);
     }

@@ -20,7 +20,7 @@ setAccountType("FO");
 pageInitialization();
 
 function pageInitialization(){
-	alert("Ran Initialization.");
+	//alert("Ran Initialization.");
     let purchaseWindow = document.getElementsByClassName("right-transaction-box")[0].getElementsByClassName("transaction-bottom")[0];
 
     if(purchaseWindow.innerHTML.length == 0){ //if there is nothing in the window using regular expressions
@@ -39,20 +39,20 @@ function getTransactionHistory(){
         xmlHttp.send(JSON.stringify(getAccountObj()));
         
     }else{
-        setTimeout('search()', 500); //wait 500 ms to retry
+        setTimeout('getTransactionHistory()', 500); //wait 500 ms to retry
     }
 }
 
 function updateTransactionWithResponse(){
     if(xmlHttp.readyState == 4){ //communication is done
-        alert(xmlHttp.response);
-        alert("status: " + xmlHttp.status);
+        //alert(xmlHttp.response);
+        //alert("status: " + xmlHttp.status);
         if(xmlHttp.status == 200){ //communication is ok (not 0)
         	purchases = xmlHttp.response;
             removePurchases();
             populatePurchases();
         }else{
-            alert("Couldn't find events!")
+            alert("Couldn't find events!");
         }
     }
 }
@@ -75,7 +75,7 @@ function populatePurchases(){
 
         transactionBox.onclick = function(){
             //nothing yet
-            alert("Yo transaction!")
+            alert("Yo transaction!");
         };
 
         let priceBox = document.createElement('p');

@@ -49,7 +49,7 @@ function getZipCode(){
 }
 
 function getAccountObj(){ //returns current account object built from local storage
-    var accountObj = new Account(); //local scope variable, might need to change to var if unexpected behavior occurs
+    let accountObj = new Account(); //local scope variable, might need to change to var if unexpected behavior occurs
     accountObj.accountType = getAccountType();
     accountObj.username = getUsername();
     accountObj.password = getPassword();
@@ -59,7 +59,7 @@ function getAccountObj(){ //returns current account object built from local stor
 }
 
 function setAccountObj(newAccountObj){ //accepts an account object and sets all variables
-	if(newAccountObj.accountType !== null && newAccountObj.accountType !== ""){ //if username variable is defined
+	if(newAccountObj.accountType !== null && newAccountObj.accountType !== ""){ //if accountType variable is defined
         setAccountType(newAccountObj.accountType);
     }
     if(newAccountObj.username !== null && newAccountObj.username !== ""){ //if username variable is defined

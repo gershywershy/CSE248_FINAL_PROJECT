@@ -233,7 +233,7 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 .newButton:hover{
-    border-width: 4px;
+    border-color: #7087d5;
     background-color: rgba(15, 126, 164, 0.8);
 }
 .newButton-black{
@@ -252,7 +252,7 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 .newButton-black:hover{
-    border-width: 4px;
+    border-color: #7087d5;
     background-color: rgba(0, 0, 0, 0.8);
 }
 .newButton-yellow{
@@ -271,7 +271,7 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 .newButton-yellow:hover{
-    border-width: 4px;
+    border-color: #7087d5;
     background-color: rgba(255, 255, 0, 0.8);
 }
 .newButton-purple{
@@ -290,7 +290,7 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 .newButton-purple:hover{
-    border-width: 4px;
+    border-color: #7087d5;
     background-color: rgba(153, 0, 255, 0.8);
 }
 .searchBar{

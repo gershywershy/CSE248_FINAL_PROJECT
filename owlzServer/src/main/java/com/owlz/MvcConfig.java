@@ -17,6 +17,12 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/funOwlMyAccount.html").setViewName("funOwlMyAccount");
         registry.addViewController("/funOwlEvents.html").setViewName("funOwlEvents");
         registry.addViewController("/funOwlVenues.html").setViewName("funOwlVenues");
+        registry.addViewController("/createBusiness").setViewName("businessCreator");
+        registry.addViewController("/businesses").setViewName("Businesses");
+        registry.addViewController("/manageBusiness").setViewName("businessManager");
+        registry.addViewController("/addEvent").setViewName("BusinessOwlAddEvents");
+        registry.addViewController("/modifyEvent").setViewName("BusinessOwlModifyEvents");
+        registry.addViewController("/owner").setViewName("businessOwner");
     }
 
 }

@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Business Owner</title>
-
+    <title>Business Employee</title>
     <link href="css/templateStyles.css" type="text/css" rel="stylesheet"/>
     <link href="css/my-account-styles.css" type="text/css" rel="stylesheet"/>
     <link href="schedule.css" type="text/css" rel="stylesheet"/>
@@ -15,60 +14,55 @@
 
 <div id="topBar">
     <h1>
-        <img src="https://tinyurl.com/kge9mqk" class="img-circle">
-        <div id="logo">OWLZ</div>
+        <img src="https://tinyurl.com/kge9mqk" class="img-circle"/>
+        <span id="logo" style="display:block">OWLZ</span>
     </h1>
 </div>
 
 <ul id="navBar">
-    <li class="navItem"><a href="Businesses.html">Businesses</a></li>
-    <li class="navItem"><a href="businessOwner.html" class="active">My Account</a></li>
+    <li class="navItem"><a href="businessEmployee.html" class="active">My Account</a></li>
+
 </ul>
 
 <div id="title">
     <h1>
-        Welcome Mr. Baccarella
+        Welcome Mr. Raymundo
     </h1>
 </div>
 
 <div class="splashBox-white large-center-splash">
 
     <div class="left-button-box">
+        <img src="http://cdn.wallpapersafari.com/6/71/l9vQg5.jpg" class="account-photo"/>
 
-        <img src="http://cdn.wallpapersafari.com/6/71/l9vQg5.jpg" class="account-photo">
-
-        <button class="account-button" onclick="location.href='genericPage2.html';">Update Info</button>
+        <button class="account-button" onclick="location.href='employeeInformation.html';">Update Info</button>
         <button class="account-button">Change Preferences</button>
-        <button class="account-button" onclick="location.href='businessCreator.html';">Create New Business</button>
-        <button class="account-button" onclick="location.href='BusinessOwlAddEvents.html';">Add Event</button>
-        <button class="account-button" onclick="location.href='BusinessOwlModifyEvents.html';">Modify Event</button>
         <button class="account-button" id="logout-button">Logout</button>
-
     </div>
 
     <div class="right-transaction-box">
         <div class="transaction-top">
-            <div class="transaction-center"><h2>Owner Information</h2></div>
+            <div class="transaction-center"><h2>Employee Information</h2></div>
             <div class="searchBar">
-                <input type="search" id="searchBar" class="flatInputBox">
-                <input type="submit" id="searchButton" value="Search">
+                <input type="search" id="searchBar" class="flatInputBox"/>
+                <input type="submit" id="searchButton" value="Search"/>
             </div>
         </div>
 
         <div class="splashBox-light transaction-bottom">
             <div class="transaction-element">
                 <p class="transaction-price">Position</p>
-                <p class="transaction-title">Business Owner</p>
+                <p class="transaction-title">Employee</p>
             </div>
 
             <div class="transaction-element">
                 <p class="transaction-price">Salary</p>
-                <p class="transaction-title">$-----</p>
+                <p class="transaction-title">$30,000</p>
             </div>
 
             <div class="transaction-element">
                 <p class="transaction-price">Pay</p>
-                <p class="transaction-title">$---/hr</p>
+                <p class="transaction-title">$15/hr</p>
             </div>
 
             <div class="right-transaction-box">
@@ -154,5 +148,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

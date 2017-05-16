@@ -37,9 +37,11 @@
             Change Preferences
         </button>
 
-        <button class="account-button" id="logout-button">
-            Logout
-        </button>
+        <form th:action="@{/logout}" method="post">
+        	<button class="account-button" id="logout-button" type="submit" value="Sign Out">
+            	Logout
+        	</button>
+        </form>
     </div>
 
     <div class="right-transaction-box">

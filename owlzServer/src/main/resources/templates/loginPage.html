@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<title>Night Owl Application</title>
+		<meta name = "Homepage"
+			content = "The Homepage of our project"/>
+		<meta name = "keywords"
+			content = "night, owl, girls, guys, music, venues, tickets, work, social justice warriors" />
+		<meta http-equiv = "author"
+			content = "Daniel Baccarella, Gershom Raymundo, Gabe Parugganan, Fernando Plaza"/>
+		<link href="css/templateStyles.css" type="text/css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<h1>Night Owl Application -- A service by Garage Software Productions&copy;</h1>
+		<p>Looking for a great time but can't find it. Night Owl is the plcace to go to find the hottest clubs in your area and have the night of your life.</p>
+		<hr />
+		<p>Sign in if you already have an account with us:</p>
+		<br />
+			<!-- This code is for the Homepage Login. -->
+			<fieldset>
+			<legend>Login</legend>
+			 <form th:action="@{/loginPage}" method="post" align="center">
+            <div><label> User Name : <input type="text" name="username"/> </label></div>
+            <div><label> Password: <input type="password" name="password"/> </label></div>
+            <div><input type="submit" value="Sign In"/></div>
+        	</form>
+			<div th:if="${param.error}">
+            Invalid username and password.
+        	</div>
+        	<div th:if="${param.logout}">
+            You have been logged out.
+        	</div>
+			</fieldset>
+		<hr />
+		<hr />
+		<!-- new accounts click here -->
+		<p>New to Night Owl? Register here:</p>
+		<div class="newButton-black" onclick="goToFOSignUp()">Fun Owl</div><br/>
+		<div class="newButton-black" onclick="goToBOSignUp()">Business Owl</div>
+		
+	</body>
+	
+	<script type="text/javascript" th:src="@{js/accountModel.js}"></script>
+	<script type="text/javascript" th:src="@{js/signInFEController.js}"></script>
+	
+</html>

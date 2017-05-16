@@ -46,13 +46,13 @@ function getTransactionHistory(){
 function updateTransactionWithResponse(){
     if(xmlHttp.readyState == 4){ //communication is done
         //alert(xmlHttp.response);
-        //alert("status: " + xmlHttp.status);
+        alert("status: " + xmlHttp.status);
         if(xmlHttp.status == 200){ //communication is ok (not 0)
         	purchases = xmlHttp.response;
             removePurchases();
             populatePurchases();
         }else{
-            alert("Couldn't find events!");
+            alert("Couldn't find purchases!");
         }
     }
 }

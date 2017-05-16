@@ -1,0 +1,17 @@
+
+#title{
+    padding-left: 50px;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+}
+.title{
+    padding-left: 50px;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+}
+
+.title-black{
+    padding-left: 50px;
+    color: black;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+}

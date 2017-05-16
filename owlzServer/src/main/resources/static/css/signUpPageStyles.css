@@ -1,0 +1,40 @@
+
+#mainBox{
+    background-image: none;
+}
+.header h1 {
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
+.mainForm{
+    font-size: 20px;
+    border-width: 50px;
+    border-color: transparent;
+    margin: 20px;
+}
+.inputBox {
+    margin-left: 10px;
+    color: black;
+}
+table{
+    background-color: rgba(71, 76, 76, 0.7);
+}
+table, th, td{
+    padding: 5px;
+    z-index: 1;
+}
+.title{
+    padding-left: 50px;
+    color: white;
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+}
+.rightPad{
+    padding-right: 50px;
+}
+.bottomPad{
+    padding-bottom: 30px;
+}
+.topPad{
+    padding-bottom: 30px;
+}

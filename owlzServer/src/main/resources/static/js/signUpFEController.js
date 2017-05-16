@@ -14,26 +14,49 @@ function AccountInfoObj(){ //used to store all account info
     this.dateOfBirth;
     this.address;
     this.zipCode;
-    this.gender;
+    this.gender;    
 }
 
+function getAccountFromParams(){
+	let account = new AccountInfoObj();
+	
+	let table = document.getElementById("mainBox").getElementsByTagName("div")[0].getElementsByTagName("table")[0];
+	
+	account.username = table.getElementsByTagName("input")[0].value;
+    account.password = table.getElementsByTagName("input")[1].value;
+    account.email = table.getElementsByTagName("input")[3].value;
+    account.name = table.getElementsByTagName("input")[4].value;
+    account.phoneNum = table.getElementsByTagName("input")[5].value;
+    account.dateOfBirth = table.getElementsByTagName("input")[6].value;
+    account.address = table.getElementsByTagName("input")[7].value;
+    account.zipCode = table.getElementsByTagName("input")[8].value;
+    account.gender = table.getElementsByTagName("select")[0].value;
+    
+	
+    return account;
+}
+
+function TextResponse(){
+	this.text;
+}
+
+let triggerCount = 0;
+let responseCount = 0;
+
 function makeAccount(){
-    if (document.getElementById("pw1").text != document.getElementById("pw2").text){ //checks if passwords match
+	
+	//alert(++triggerCount);
+	
+	pass1 = document.getElementById("mainBox").getElementsByTagName("div")[0].getElementsByTagName("table")[0].getElementsByTagName("input")[1].value;
+	pass2 = document.getElementById("mainBox").getElementsByTagName("div")[0].getElementsByTagName("table")[0].getElementsByTagName("input")[2].value;
+	
+    if (pass1 != pass2){ //checks if passwords match
         alert("Password does not match");
         return;
     }
-    let newAccount = new AccountInfoObj();
-    newAccount.username = document.getElementById("username").text;
-    newAccount.password = document.getElementById("pw1").text;
-    newAccount.email = document.getElementById("email").text;
-    newAccount.name = document.getElementById("name").text;
-    newAccount.phoneNum = document.getElementById("phoneNum").text;
-    newAccount.dateOfBirth = document.getElementById("birthday").text;
-    newAccount.address = document.getElementById("address").text;
-    newAccount.zipCode = document.getElementById("zipCode").text;
-    newAccount.gender = document.getElementById("gender").value;
+    let newAccount = getAccountFromParams();
 
-    if(xmlHttp.readyState == 0 || xmlHttp.readyState == 4){
+    if(xmlHttp.readyState == 0 || xmlHttp.readyState == 4){ //if the object isn't busy
 
         xmlHttp.open("POST", "", true);
         xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -46,13 +69,23 @@ function makeAccount(){
 }
 
 function responseHandle(){
-    let responseString = xmlHttp.response;
+	
+	if(xmlHttp.response == null){ //gets around the double null to start
+		return;
+	}
+	
+    let responseString = (xmlHttp.response).text;
+    
+    alert(responseString);
+    alert("Response: " + (++responseCount));
 
     switch(responseString){
         case 'valid':
-            validAccountCreate(newAccount);
+        	alert("valid account create");
+            validAccountCreate(getAccountFromParams());
             return;
         case 'username taken':
+        	alert("username taken");
             usernameTaken();
             return;
         case 'add account failed':

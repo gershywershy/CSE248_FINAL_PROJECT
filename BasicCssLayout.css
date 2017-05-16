@@ -1,0 +1,41 @@
+html{
+	background-image: url(loungeBlurSat.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+ 	color: white;
+
+    text-shadow: -1px 0 #8ba0c1, 0 1px #8ba0c1, 1px 0 #8ba0c1, 0 -1px #8ba0c1;
+	position:fixed;
+    top:8px;
+    bottom: 0px;
+    left:8px;
+    right: 8px;
+    z-index: -1;
+}
+
+#top{
+	color: cyan;
+	font-size: 40px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	
+	background-image: url(NightOwlLogo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+#questionPreference{
+	color: cyan;
+	font-size: 20px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+#preferenceBoxTitle{
+	color: cyan;
+	font-size: 20px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}

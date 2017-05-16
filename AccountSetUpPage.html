@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title>Account Set Up Page</title>
+<link href="BasicCssLayout.css" type = "text/css" rel="stylesheet" />
+</head>
+
+	<body>
+	<h1 id = "top">Account Set Up</h1>
+			<p>Please enter the following information and then press continue.</p>
+			<hr />
+		<h3>Personal Information</h3>
+		<!-- Users personal information -->
+			<fieldset>
+			<legend>Basic User Information</legend>
+			<table align="center">
+				<tr>
+					<!-- Row 1 - name and email -->
+					<th scope = "col">Name:</th>
+					<th scope = "col"><input type="text" input = "15" maxlength="15" required = "required"
+										placeholder = "enter name"/></th>
+					<th scope = "col">Email:</th>
+					<th scope = "col"><input type="email" input = "15" maxlength="15" required = "required"
+										placeholder = "enter email"/></th>
+				</tr>
+				<tr>
+					<!--Row 2 - birthday and phone number -->
+					<th scope = "row">Birthday:</th>
+					<th scope = "col" align="left"><input type="date" input = "15" maxlength="15" required = "required"/></th>
+					<th scope = "col">Phone #:</th>
+					<th scope = "col"><input type="text" input = "15" maxlength="15" required = "required"
+										placeholder = "enter phone #"/></th>
+				</tr>
+				<tr>
+					<!-- Row 3 - address and gender -->
+					<th scope = "row">Address:</th>
+					<th scope = "col"><input type="text" input = "15" maxlength="15" required = "required"
+										placeholder = "enter address"/></th>
+					<th scope = "col">Gender:</th>
+					<th scope = "col" align="left">
+						<form action = "">
+							<select name = "gender">
+								<option value = "Male">Male</option>
+								<option value = "Female">Female</option>
+								<option value = "Prefer not to Answer">Prefer not to answer</option>
+								<option value = "Social Justice Warrior">Social Justice Warrior</option>
+							</select>
+						</form>
+				  </th>
+				</tr>
+				<tr>
+					<!-- Row 5 - zipcode -->
+					<th scope = "row">Zipcode:</th>
+					<th scope = "col"><input type="text" input = "15" maxlength="15" required = "required"
+										placeholder = "enter zipcode"/></th>
+				</tr>
+			</table>
+			</fieldset>
+			<br />
+			<hr />
+			<br />
+		<!-- User makes login info and it is to be checked if valid -->
+		<h3>Login Information</h3>
+			<fieldset>
+			<legend>Basic Login Information</legend>
+			<table align = "center">
+				<tr>
+					<!-- Username -->
+					<th scope = "row" align="right">Username:</th>
+					<th scope = "col"><input type="text" input = "15" maxlength="15" required = "required"
+										placeholder = "enter username"/></th>
+				</tr>
+				<tr>
+					<!-- Password -->
+					<th scope = "row" align="right">Password:</th>
+					<th scope = "col"><input type="password" input = "15" maxlength="15" required = "required"/></th>
+				</tr>
+				<tr>
+					<!-- Verify Password -->
+					<th scope = "row">Verify Password:</th>
+					<th scope = "col"><input type = "password" input = "15" maxlength = "15" required = "required"/></th>
+				</tr>
+			</table>
+			</fieldset>
+		<hr />
+		<br />
+		<!-- Continue Button -->
+		<a class="link" href ="FunOwlPersonalPreferencesPage.html"><button>Continue</button></a>
+	</body>
+</html>

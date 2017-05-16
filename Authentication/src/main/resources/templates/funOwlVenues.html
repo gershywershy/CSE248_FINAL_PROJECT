@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Fun Owl Venues</title>
+    <link th:href="@{/css/templateStyles.css}" type="text/css" rel="stylesheet"/>
+    <link th:href="@{/css/venue-events.css}" type="text/css" rel="stylesheet"/>
+
+    <script type="text/javascript" th:src="@{/js/popUpWindowScript.js}"></script>
+
+</head>
+<body class="bodyFlex">
+<div class="backGround-3"></div>
+
+<div id="topBar">
+    <h1>
+        <img src="https://tinyurl.com/kge9mqk" class="img-circle"></img>
+        <div id="logo">OWLZ</div>
+    </h1>
+    <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+</div>
+<ul id="navBar">
+    <li class="navItem"><a href="funOwlVenues.html" class="active">Venues</a></li>
+    <li class="navItem"><a href="funOwlEvents.html">Events</a></li>
+    <li class="navItem"><a href="funOwlMyAccount.html">My Account</a></li>
+    <li class="searchBar">
+        <input type="search" id="searchBar" class="flatInputBox"></input>
+        <input type="submit" id="searchButton" value="Search"></input>
+    </li>
+</ul>
+
+<!-- Start writing inside mainbox -->
+
+<div class="popup-full" id="venue-1-popup">
+    <div class="popup-title">
+        <a class="closeX" onclick="popUpToggle('venue-1-popup')">&#10006;</a>
+        <h1>CIELO</h1>
+    </div>
+    <div class="popup-body">
+        <div class="popup-photo-column">
+
+            <img th:src="@{http://www.clothingtowear.com/pictures/421/421-nyc-nightclubs-c2a40d1.jpg}" class="popup-photo"></img>
+
+            <button class="popup-button" onclick="location.href='genericPage2.html';">
+                View Events
+            </button>
+
+            <button class="popup-button">
+                Get Directions
+            </button>
+
+        </div>
+        <div class="popup-text-col">
+                ABOUT CIELO
+                Cielo is a state-of-the-art space in downtown’s ultra chic Meat Packing District that provides sophisticated
+                fans of electronic music with a specialized space, tailored to their tastes. It is a haven for individuals
+                seeking culturally rich nightlife with neither the hassles of large clubs nor the elitism of upscale lounges
+                with too many VIP rooms. Once you are in Cielo, there will be no more ropes, checkpoints, or rules. For more
+                than 12 years, Cielo has stayed true to these initiatives and established itself as a legendary name in New York
+                City’s dance music underground.<br/><br/>
+
+                Cielo goes back to basics: the best DJs, a strong door, impeccable service, stunning decor and lighting, skillfully
+                designed acoustics and a Funktion One soundsystem that will blow the socks off even the most fastidious audiophile.
+                The sunken dancefloor is surrounded by banquettes decked out in brown and beige suede with a range of intelligent
+                lighting effects to enhance the intimate design; the stylish look is inspired by the timeless 70’s aesthetic.<br/><br/>
+
+                Conceived in 2003, Cielo is the brainchild of co-owner Nicolas Matar. A DJ for the past 20 years, Nicolas was
+                most notably known for his residency at the infamous Pacha Nightclub in Ibiza. Nicolas played in the funky room
+                or “El Cielo” and credits those years as the inspiration for Cielo and his eventual return to New York. For
+                over a decade, Cielo has remained focused on maintaining high quality service and providing an experience unlike
+                any other. As demonstrated by the unprecedented number of awards and nominations the club currently boasts, Cielo
+                has established itself as an international brand with an edict of cutting-edge electronic music. In addition to
+                its accolades, Cielo has featured more top international DJs than any other club in North America since its opening.
+                DJs such as Luciano, David Guetta and Sven Vath passed through Cielo doors before they were the kingpins they are today.<br/><br/>
+
+                See you on the dancefloor…
+        </div>
+    </div>
+</div>
+
+
+<div class="title80">
+    <div class="title80Text">Venues</div>
+</div>
+
+<div class="splashBox-white verticalScrollBox">
+
+    <div class="eventBox" onclick="popUpToggle('venue-1-popup')">
+        <img th:src="@{http://www.clothingtowear.com/pictures/421/421-nyc-nightclubs-c2a40d1.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Cielo NYC</h3>
+            <p>Cielo is a state-of-the-art space in downtown’s ultra chic Meat Packing District that provides sophisticated fans of electronic music with a specialized space,
+                tailored to their tastes. It is a haven for individuals seeking culturally rich nightlife with neither the hassles of large clubs nor the elitism of upscale
+                lounges with too many VIP rooms.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://static1.squarespace.com/static/55b6dd6fe4b06f1beaf4d6be/t/57fed45c725e25e38f444195/1476318303556/}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Reign</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://i.ytimg.com/vi/JWYhCWF2Anc/maxresdefault.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Solution</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://s-media-cache-ak0.pinimg.com/736x/af/ac/93/afac93134bf05f1e90f0432d4cd6f446.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Story</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://anotherimg.dazedgroup.netdna-cdn.com/786/azure/another-prod/310/5/315069.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>The Stork Club</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://www.1800postcards.com/blog/wp-content/uploads/2016/02/flyers_designs_nyc_2.png}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Venue 6</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://image.shutterstock.com/z/stock-vector-party-flyer-club-music-flyer-dj-lineup-design-vector-template-304737707.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Venue 7</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://s-media-cache-ak0.pinimg.com/236x/ac/3d/62/ac3d62488364d0c831ce2774a21593b5.jpg?noindex=1}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Venue 8</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://www.bombparties.com/wp-content/uploads/2015/08/082815_0135_ADTheGodBir1.png}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Venue 9</h3>
+            <p>Wow our club is so cool! You should totally come here for the following reasons: we are a club. That's convincing right? Yeah I thought so. See you soon.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>

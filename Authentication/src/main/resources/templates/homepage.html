@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Garage Softwares Nightclub App</title>
+    <link href="css/homepage.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+<body>
+<div id="page">
+    <div id="logo">
+        <h1>
+            Garage Softwares Nightclub App
+        </h1>
+    </div>
+    <ul id="navigation">
+        <li><a th:href="@{#}" class="on">Home</a></li>
+        <li><a th:href="@{funOwlMyAccount.html}">My Account</a></li>
+        <li><a th:href="@{register.html}">Register</a></li>
+        <li><a th:href="@{#}">About</a></li>
+        <li><a th:href="@{#}">Contact</a></li>
+    </ul>
+    <p>
+        <img th:src="@{backgrounds/background.png}" width="200" height="200" alt="Fender Rhodes, Hohner Clavinet,
+ and Wurlitzer EP200" />
+    </p>
+    <p class="bottom">
+        Welcome to the premier destination for your nightclub needs!
+    </p>
+</div>
+
+</body>
+</html>

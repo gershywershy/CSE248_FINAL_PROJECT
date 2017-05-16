@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Type Select Page</title>
+    <style type="text/css">
+        body{
+            background-image: url("backgrounds/accountSelectorBackGround/ASbackGround.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .clickableArea{
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            border-style: solid;
+            border-color:white;
+            border-width: 3px;
+
+            vertical-align: middle;
+            line-height: initial;
+
+            height: 75%;
+            width:  35%;
+
+            background-color: #5bc0de;
+
+            color: white;
+            text-align: left;
+        }
+        .clickableArea h1{
+            text-align: center;
+
+            border-style: solid;
+            border-color: white;
+            border-width: 4px;
+
+            background-color: rgba(255, 255, 255, 0.30);
+        }
+
+        #mainWindow{
+
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            margin: auto;
+
+            height: 75%;
+            width:  75%;
+
+            background-image: url("backgrounds/accountSelectorBackGround/ASbackGroundBlurSat.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 80px;
+
+            border-style: solid;
+            border-color:white;
+            border-width: 3px;
+
+        }
+
+        #funOwl{
+            background-image: url("backgrounds/accountSelectorBackGround/ASblue.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #busOwl{
+            background-image: url("backgrounds/accountSelectorBackGround/ASgreen.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .clickableArea:hover{
+            border-width: 6px;
+        }
+        #busOwl:hover{
+            background-image: none;
+            background-color: rgba(0,166,81, 0.7);
+        }
+        #funOwl:hover{
+            background-image: none;
+            background-color: rgba(0,178,197, 0.7);
+        }
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+
+            vertical-align: text-top;
+            color: white;
+            border-style: solid;
+            border-color: white;
+            border-width: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainWindow">
+
+        <div id="funOwl" class="clickableArea" onclick="location.href='funOwlSignUpPage.html';">
+            <h1>Fun Owl!</h1>
+
+            <p>Discover all the hottest spots around your area! Owlz makes it easy to make reservations and get tickets for all the events your friends will be talking about.</p>
+        </div>
+
+        <div id="logo">
+            <h1>OWLZ</h1>
+        </div>
+
+        <div id="busOwl" class="clickableArea" onclick="location.href='funOwlSignUpPage.html';">
+            <h1>Business Owl!</h1>
+
+            <p>Get your business discovered in one of the most fun consumer apps ever created. Advertise with our automated system, to make sure that everyone knows about your awesome events!</p>
+        </div>
+    </div>
+</body>
+</html>

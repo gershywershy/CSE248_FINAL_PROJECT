@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Fun Owl Venues</title>
+    <link href="css/templateStyles.css" type="text/css" rel="stylesheet"/>
+    <link href="css/venue-events.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body class="bodyFlex">
+<div class="backGround-3"></div>
+
+<div id="topBar">
+    <h1>
+        <img src="https://tinyurl.com/kge9mqk" class="img-circle">
+        <div id="logo">OWLZ</div>
+    </h1>
+</div>
+<ul id="navBar">
+    <li class="navItem"><a href="funOwlVenues.html" class="active">Venues</a></li>
+    <li class="navItem"><a href="funOwlEvents.html">Events</a></li>
+    <li class="navItem"><a href="funOwlMyAccount.html">My Account</a></li>
+    <div class="searchBar">
+        <input type="search" id="searchBar" class="flatInputBox">
+        <input type="submit" id="searchButton" value="Search">
+    </div>
+</ul>
+
+<!-- Start writing inside mainbox -->
+
+<div class="popup-full" id="venue-popup">
+    <div class="popup-title">
+        <a class="closeX" onclick="popUpToggle('venue-popup')">&#10006;</a>
+        <h1>No Title!</h1>
+    </div>
+    <div class="popup-body">
+        <div class="popup-photo-column">
+
+            <img src="http://www.clothingtowear.com/pictures/421/421-nyc-nightclubs-c2a40d1.jpg" class="popup-photo">
+
+            <button class="popup-button" onclick="location.href='genericPage2.html';">
+                View Events
+            </button>
+
+            <button class="popup-button">
+                Get Directions
+            </button>
+
+        </div>
+        <div class="popup-text-col">
+                No Description!
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="title80">
+    <div class="title80Text">Venues</div>
+</div>
+
+<div class="splashBox-white verticalScrollBox" id="venueWindow">
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/popUpWindowScript.js"></script>
+<script type="text/javascript" src="js/venueFEController.js"></script>
+
+</html>

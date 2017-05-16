@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Fun Owl Preference Page</title>
+		<link href="BasicCssLayout.css" type = "text/css" rel="stylesheet" />
+	</head>
+
+	<body> 
+		<h1 align="center" id = "top">Personal Preferences</h1>
+		<p id = "questionPreference">What are your personal venue/nightclub preferences?</p>
+		<link href="BasicCssLayout.css" type = "text/css" rel="stylesheet" />
+		<fieldset id = "preferenceBox">
+		<!-- User adjusts personal preferneces. venues, music type, club type -->
+		<legend id = "preferenceBoxTitle">Fun Owl Preferences</legend> 
+			
+			<div id="musicPreference">
+			<fieldset>
+			<h3 id = "musicPreferenceChoiceText">Music Preference</h3>
+				<!-- here will go images and for musice preferences-->
+				<div id = "musicPreferenceScrollbarDiv" style="border: 1px solid; height: 300; overflow-x: scroll; overflow-y: scroll">
+					<select  id = "musicChoice" multiple="multiple">
+						
+  							<option id = "jazz" value="1">Jazz</option>
+  							<option id = "edm" value="2">EDM</option>
+  							<option id = "hiphop" value="3">Hip-Hop</option>
+  							<option id = "country" value="4">Country</option>
+
+					</select>
+				</div>
+			</fieldset>
+			</div>
+			
+			<br />
+			
+			<div>
+			<fieldset>
+			<h3 id = "venueChoiceText">Venue Choice</h3>
+			<!-- here will go images and for venue preferences-->
+				<select multiple="multiple">
+					<option value="1">Downtown</option>
+					<option value="2">Uptown</option>
+					<option value="3">midtown</option>
+				</select>
+			</fieldset>
+			</div>
+			
+			<br />
+			
+			<div>
+			<fieldset>
+			<h3 id = "genderChoiceText">Gender Choice</h3>
+			<!-- here will go images and for gender preferences-->
+					<select multiple="multiple">
+						<option value="1">Male Club</option>
+						<option value="2">Female Club</option>
+						<option value="3">Gay Club</option>
+						<option value="3">Social Justice Warrior Club</option>
+					</select>
+			</fieldset>
+			</div>	
+			
+		</fieldset>
+		<!-- Continue Button / code yet to be made for business side of the applia=cation-->
+		<a id = "continueButton"><button>Continue</button></a>
+	</body>
+</html>

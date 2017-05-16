@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Fun Owl Events Page</title>
+    <link th:href="@{/css/templateStyles.css}" rel="stylesheet"/>
+    <link th:href="@{/css/venue-events.css}" rel="stylesheet"/>
+
+    <script type="text/javascript" th:src="@{/js/popUpWindowScript.js}"></script>
+
+</head>
+<body class="bodyFlex">
+
+<div class="backGround-2"></div>
+
+<div id="topBar">
+    <h1>
+        <img src="https://tinyurl.com/kge9mqk" class="img-circle"></img>
+        <span id="logo" style="display:block">OWLZ</span>
+    </h1>
+    <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+</div>
+<ul id="navBar">
+    <li class="navItem"><a href="funOwlVenues.html">Venues</a></li>
+    <li class="navItem"><a href="funOwlEvents.html" class="active">Events</a></li>
+    <li class="navItem"><a href="funOwlMyAccount.html">My Account</a></li>
+    <li class="searchBar">
+        <input type="search" id="searchBar" class="flatInputBox"></input>
+        <input type="submit" id="searchButton" value="Search"></input>
+    </li>
+</ul>
+
+<!-- Start writing inside mainbox -->
+
+<div class="popup-full" id="event-1-popup">
+    <div class="popup-title">
+        <a class="closeX" onclick="popUpToggle('event-1-popup')">&#10006;</a>
+        <h1>Event 1</h1>
+    </div>
+    <div class="popup-body">
+        <div class="popup-photo-column">
+
+            <img th:src="@{https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F30626206%2F22430626928%2F1%2Foriginal.jpg?w=800&amp;rect=0%2C483%2C800%2C400&amp;s=aa3a28adef1f530ccf637631dda24416}" class="popup-photo"></img>
+
+            <button class="popup-button" onclick="location.href='genericPage2.html';">
+                Buy Tickets
+            </button>
+
+            <button class="popup-button">
+                Go To Venue Page
+            </button>
+
+        </div>
+        <div class="popup-text-col">
+            <p>
+                THE PARTY MOVED TO TAJ II Today!!! https://perfectthursdays.eventbrite.com Visit link to RSVP for FREE Admission, and much more goodies<br />
+                The DL Afterwork Event<br /><br />
+                Text TheDL to 83361 for Instant RSVP to the Event<br /><br />
+                DL ROOFTOP/Lounge. NYC Nightclubs. 95 Delancey St, LES, NYC<br />
+                GROUPS OF 6+ LADIES (group of 10+ pple) GET A FREE BOTTLE OF CHAMPAGNE w/RSVP!
+                Cris A.C. and Friends hosts a Afterwork event at THE DL, a multi-level lounge and event space located in
+                Manhattan's Lower East Side. If you are looking for an extraordinary daytime event on a Thursday, DL Rooftop
+                has what you're looking for. Spanning 7,500 square-feet over three levels, DL Rooftop NYC's luxe decor and dynamic
+                energy embodies a lively ambiance. You can stop and hit up the DL Rooftop sultry second floor (Red Room) or enjoy
+                spectacular views of the Williamsburg Bridge on the South Beach–esque third floor (Rooftop). The third floor of DL Rooftop
+                is unique given the unique views of the Lower East Side skyline. Additionally, DL Rooftop boasts one of the largest
+                retractable rooftops in New York City. FREE Admission on the CRIS A.C. Guest List for everyone all day only with RSVP.
+                All large parties (8+) and groups who also RSVP get special attention and VIP courtesy and a FREE Bottle of Champagne.
+                Call me direct @ 917.653.0768 for Table Service. All Admission is at the Doorman's Discretion. 21+ID. For Cris A.C.
+                List/VIP CrisAC@Mac.com Special Thanks to www.QueensRealEsate.info<br /><br />
+                Bottle Specials(with Advanced Reservation Only):<br />
+                $250 - 1 Bottle &amp; Get a FREE Bottle Of Champagne<br />
+                $500 - 2 Bottles &amp; 3rd one FREE<br /><br />
+                Visit www.ACpass.com (for mobile devices) NOW for Info/ Direction/ ACPASS Card.<br />
+                Text ACPASS to 83361 to enter to win a VIP Ladies Night package(over $1000 Value - A party with VIP List, a bottle of Champagne and Vodka &amp; More).
+
+
+                <br />THE PARTY MOVED TO TAJ II Today!!! https://perfectthursdays.eventbrite.com Visit link to RSVP for FREE Admission, and much more goodies<br />
+                The DL Afterwork Event<br /><br />
+                Text TheDL to 83361 for Instant RSVP to the Event<br /><br />
+                DL ROOFTOP/Lounge. NYC Nightclubs. 95 Delancey St, LES, NYC<br />
+                GROUPS OF 6+ LADIES (group of 10+ pple) GET A FREE BOTTLE OF CHAMPAGNE w/RSVP!
+                Cris A.C. and Friends hosts a Afterwork event at THE DL, a multi-level lounge and event space located in
+                Manhattan's Lower East Side. If you are looking for an extraordinary daytime event on a Thursday, DL Rooftop
+                has what you're looking for. Spanning 7,500 square-feet over three levels, DL Rooftop NYC's luxe decor and dynamic
+                energy embodies a lively ambiance. You can stop and hit up the DL Rooftop sultry second floor (Red Room) or enjoy
+                spectacular views of the Williamsburg Bridge on the South Beach–esque third floor (Rooftop). The third floor of DL Rooftop
+                is unique given the unique views of the Lower East Side skyline. Additionally, DL Rooftop boasts one of the largest
+                retractable rooftops in New York City. FREE Admission on the CRIS A.C. Guest List for everyone all day only with RSVP.
+                All large parties (8+) and groups who also RSVP get special attention and VIP courtesy and a FREE Bottle of Champagne.
+                Call me direct @ 917.653.0768 for Table Service. All Admission is at the Doorman's Discretion. 21+ID. For Cris A.C.
+                List/VIP CrisAC@Mac.com Special Thanks to www.QueensRealEsate.info<br /><br />
+                Bottle Specials(with Advanced Reservation Only):<br />
+                $250 - 1 Bottle &amp; Get a FREE Bottle Of Champagne<br />
+                $500 - 2 Bottles &amp; 3rd one FREE<br /><br />
+                Visit www.ACpass.com (for mobile devices) NOW for Info/ Direction/ ACPASS Card.<br />
+                Text ACPASS to 83361 to enter to win a VIP Ladies Night package(over $1000 Value - A party with VIP List, a bottle of Champagne and Vodka &amp; More).
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="title80">
+    <div class="title80Text">Events</div>
+</div>
+
+<div class="splashBox-white verticalScrollBox">
+
+    <div class="eventBox" onclick="popUpToggle('event-1-popup')">
+        <img th:src="@{https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F30626206%2F22430626928%2F1%2Foriginal.jpg?w=800&amp;rect=0%2C483%2C800%2C400&amp;s=aa3a28adef1f530ccf637631dda24416}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 1</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://s-media-cache-ak0.pinimg.com/564x/6e/6e/14/6e6e14afdd394df6a56ae5da57845244.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 2</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://www.flashdancersnyc.com/wp-content/uploads/2017/03/Cocktail-Flyer-Template.gif}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 3</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://www.clubcrawlers.com/designedit/cache/events/4629/1000_BBB_895x810_2.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 4</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://img8.weemove.com/ressources/images/evenement/evenement_747379/flyer_747379.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 5</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://www.1800postcards.com/blog/wp-content/uploads/2016/02/flyers_designs_nyc_2.png}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 6</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://image.shutterstock.com/z/stock-vector-party-flyer-club-music-flyer-dj-lineup-design-vector-template-304737707.jpg}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 7</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{https://s-media-cache-ak0.pinimg.com/236x/ac/3d/62/ac3d62488364d0c831ce2774a21593b5.jpg?noindex=1}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 8</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+    <div class="eventBox">
+        <img th:src="@{http://www.bombparties.com/wp-content/uploads/2015/08/082815_0135_ADTheGodBir1.png}" class="eventPhoto"></img>
+
+        <div class="eventTitle">
+            <h3>Event 9</h3>
+            <p>Some really cool event description. We have a lot of cool things planned, for our club event and things.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

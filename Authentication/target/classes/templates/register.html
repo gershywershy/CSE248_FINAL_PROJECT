@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>AccountTypeSelection</title>
+		<link href="BasicCssLayout.css" type = "text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+	<h1 id = "accountTypeSelection">Account Type Selection</h1>
+		<p>What type of an account are you creating?</p>
+			<!-- User selects accoun type; takes them to corresponding page -->
+			<select name = "accountType">
+				<option value = "Business Account">Business Owl Account</option>
+				<option value = "Business Account">Personal Owl Account</option>
+			</select>
+			
+		<hr />
+		<!-- Continue button -->
+		<a href="pickType.html"><button>Continue</button></a>
+	</body>
+</html>

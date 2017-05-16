@@ -1,6 +1,7 @@
 package com.owlz.models;
 
 public abstract class Person {
+	
 	private String name;
 	private String userName;
 	private String password;

@@ -13,14 +13,12 @@ function purchase(){
     this.price;
 }
 
-setUsername("test_user");
+setUsername("test_user"); //in for testing purposes right now
 setPassword("test_password");
 setAccountType("FO");
 
-pageInitialization();
-
-function pageInitialization(){
-	//alert("Ran Initialization.");
+document.addEventListener('DOMContentLoaded', function() { //runs on page load
+	
     let purchaseWindow = document.getElementsByClassName("right-transaction-box")[0].getElementsByClassName("transaction-bottom")[0];
 
     if(purchaseWindow.innerHTML.length == 0){ //if there is nothing in the window using regular expressions
@@ -28,7 +26,7 @@ function pageInitialization(){
     }else{
         alert("events not empty"); //used for testing
     }
-}
+});
 
 function getTransactionHistory(){
     if(xmlHttp.readyState == 0 || xmlHttp.readyState == 4){
@@ -46,7 +44,7 @@ function getTransactionHistory(){
 function updateTransactionWithResponse(){
     if(xmlHttp.readyState == 4){ //communication is done
         //alert(xmlHttp.response);
-        alert("status: " + xmlHttp.status);
+        //alert("status: " + xmlHttp.status);
         if(xmlHttp.status == 200){ //communication is ok (not 0)
         	purchases = xmlHttp.response;
             removePurchases();

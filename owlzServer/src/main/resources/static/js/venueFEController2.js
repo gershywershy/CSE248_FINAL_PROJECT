@@ -22,7 +22,7 @@ function pageInitialization(){
     let eventWindow = document.getElementById('venueWindow');
 
     if(eventWindow.innerHTML.length == 0){ //if there is nothing in the window using regular expressions
-    	alert("Zipcode: " + getZipCode());
+    	//alert("Zipcode: " + getZipCode());
         document.getElementsByTagName("input")[0].value = getZipCode(); //gets zipcode from model and puts that into search bar
         search(); //runs search function for the account zipcode
 
@@ -45,8 +45,8 @@ function search(){
 
 function handleServerResponse(){
     if(xmlHttp.readyState == 4){ //communication is done
-        alert(xmlHttp.response);
-        alert("status: " + xmlHttp.status);
+        //alert(xmlHttp.response);
+        //alert("status: " + xmlHttp.status);
         if(xmlHttp.status == 200){ //communication is ok (not 0)
             venues = xmlHttp.response;
             removeVenues();

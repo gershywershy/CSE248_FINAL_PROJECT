@@ -17,6 +17,16 @@ function AccountInfoObj(){ //used to store all account info
     this.gender;    
 }
 
+
+document.addEventListener('DOMContentLoaded', function() { //runs on page load
+		//alert(getAccountType());
+		//alert(document.getElementById("signUpText").innerHTML);
+		if(getAccountType()=="BO"){
+			document.getElementById("signUpText").innerHTML = "Business Owl Sign Up";
+		}
+	});
+
+
 function getAccountFromParams(){
 	let account = new AccountInfoObj();
 	
@@ -76,8 +86,8 @@ function responseHandle(){
 	
     let responseString = (xmlHttp.response).text;
     
-    alert(responseString);
-    alert("Response: " + (++responseCount));
+    //alert(responseString);
+    //alert("Response: " + (++responseCount));
 
     switch(responseString){
         case 'valid':
@@ -102,9 +112,9 @@ function validAccountCreate(account){
     setZipcode(account.zipCode);
 
     if(getAccountType() === "FO"){
-        window.location.href = 'http://localhost:8080/funOwlEvents'; //should send to preferences page when implemented
+        window.location.href = '/funOwlEvents'; //should send to preferences page when implemented
     }else if(getAccountType() === "BO"){
-        //go to business owl account when finished
+    	window.location.href = '/manageBusiness';//go to business owl account when finished
     }else{
         alert("Invalid Account Type");
     }
